@@ -1,0 +1,136 @@
+@import '../../style/variables.scss';
+
+.action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 113px;
+
+    &__main {
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+
+    &__first {
+        height: 205px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-right: 30px;
+
+        &__title {
+            width: 263px;
+            height: 67px;
+            font-family: 'Merriweather';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 120%;
+            color: #000000;
+        }
+
+        &__text {
+            width: 263px;
+            height: 100px;            
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 154.8%;
+            color: $lightGray;
+        }
+    }
+
+    &__second {
+        display: flex;
+        flex-direction: column;
+
+        &__element {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 848px;
+            height: 194px;
+            border-top: 1px solid $purple;
+            border-bottom: 1px solid $purple;
+            margin-top: -0.5px;
+        }
+
+        &__text {
+            width: 360px;
+            height: 138px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 30px;
+            line-height: 100%;
+            display: flex;
+            align-items: center;
+            color: #000000;
+            margin-left: 60px;
+        }
+
+        &__more {
+            position: absolute;
+            left: 0;
+            bottom: 20px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 21px;
+            text-decoration-line: underline;
+            color: $purple;
+            
+            &::before {
+                content: 'Подробнее >';
+            }
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__circle {
+        &__1, &__2, &__3, &__4, &__5 {
+            position: absolute;
+            width: 134px;
+            height: 134px;
+            background-color: $purple;
+            border-radius: 50%;
+        }
+
+        &__1 {
+            padding: 5px;
+            left: 34%;
+            top: 18px;         
+        }
+
+        &__2 {
+            left: 88%;
+            top: 229px;
+        }
+
+        &__3 {
+            left: 34.2%;
+            top: 367px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &__4 {
+            left: 85%;
+            top: 664px;
+        }
+
+        &__5 {
+            left: 35%;
+            top: 846px;
+        }
+    }
+
+}

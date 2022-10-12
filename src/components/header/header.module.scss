@@ -1,0 +1,31 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+
+    margin-left: 150px;
+    margin-right: 151px;
+    margin-top: 37.95px;
+
+    &__title {
+        display: flex;
+        position: relative;
+        width: 300px;
+        justify-content: space-between;
+    }
+
+    &__tradeMark {
+        position: absolute;
+        top: -7.5px;
+        right: -7.15px;
+    }
+
+    &__icon__container {
+        display: flex;
+        justify-content: space-between;
+        width: 220px;
+    }
+}
+
+.button:hover {
+    cursor: pointer;
+}

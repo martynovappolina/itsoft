@@ -1,0 +1,35 @@
+@import '../../../../style/variables.scss';
+
+.header {
+    width: 79%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 135px;
+
+    &__element {
+        display: flex;
+    }
+
+    &__text {
+        width: 165px;
+        height: 50px;
+        font-family: 'Merriweather';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 154.8%;
+        color: $darkGray;
+        margin-left: 30px;
+        position: relative;
+    }
+
+    &__info {
+        position: absolute;
+        right: 45px;
+        bottom: 0;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
