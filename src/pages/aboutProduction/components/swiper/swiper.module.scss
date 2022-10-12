@@ -1,0 +1,22 @@
+.wrapper {
+
+}
+
+.slider {
+    width: 500px;
+    height: 500px;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    border: 1px solid black;
+
+    &__item {
+        width: 300px;
+        height: 200px;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+    }
+}

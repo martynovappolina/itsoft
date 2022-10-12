@@ -1,0 +1,135 @@
+@import '../../style/variables.scss';
+
+.main {
+    display: flex;
+    margin-left: 150px;
+    position: relative;
+    margin-bottom: 150px;
+
+    &__first {
+        &__container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-top: 67px;
+        }
+
+        &__title {
+            width: 360px;
+            height: 268px;
+
+            font-family: 'Merriweather';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 55px;
+            line-height: 100%;
+            color: $black;
+
+            margin-bottom: 159px;
+        }
+
+        &__icons {
+            &__container {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 265px;
+            }
+
+            &__block {
+                display: flex;
+                width: 246px;
+                height: 67px;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            &__text {
+                width: 149px;
+                height: 20px;
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 21px;
+                text-decoration-line: underline;
+                color: $purple;
+                
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    &__second {
+        &__container {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: end;
+            height: 759px;
+            width: 70%;
+        }
+
+        &__img1 {
+            position: absolute;
+            top: 145px;
+            left: 18%;
+            background: url('../../style/images/venarus_1.png');
+            width: 680px;
+            height: 400px;
+        }
+
+        &__img2 {
+            position: absolute;
+            top: 145px;
+            left: 61%;
+            background: url('../../style/images/venarus_2.png');
+            width: 374px;
+            height: 374px;
+        }
+
+        &__img3 {
+            position: absolute;
+            width: 682.48px;
+            height: 402.39px;
+            left: 32%;
+            top: 209px;
+            background: url('../../style/images/venarus_3.png');
+        }
+
+        &__button {
+            height: 67px;
+            width: 263px;
+            border-radius: 33.5px;
+            border: 1px solid #FFFFFF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 31px;
+
+            &:hover {
+                cursor: pointer;
+                opacity: 0.3;
+            }
+
+            &__container {
+                width: 166px;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            &__text {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 21px;
+                text-align: center;
+                color: #FFFFFF;
+            }
+        }
+    }
+}
+  

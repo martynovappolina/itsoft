@@ -1,0 +1,34 @@
+@import '../../style/variables.scss';
+
+.line {
+    height: 60px;
+    border-top: 1px solid $purple;
+    border-bottom: 1px solid $purple;
+
+    &__text {
+        height: 56px;
+        white-space: nowrap;
+
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 48px;
+        line-height: 56px;
+        text-transform: uppercase;
+
+        color: $purple;
+        animation: running-line 60s infinite linear;
+    }
+}
+
+@keyframes running-line {
+    0% {
+        margin-left: -100%;
+    }
+    50% {
+        margin-left: 0;
+    }
+    100% {
+        margin-left: -100%;
+    }
+}
